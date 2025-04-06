@@ -12,7 +12,7 @@ from deep_translator import GoogleTranslator
 
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 if not GOOGLE_API_KEY:
-    st.error("⚠️ Google GenAI API key is missing! Please add it to `.streamlit/secrets.toml`.")
+    st.error("⚠️ Google GenAI API key is missing!.")
     st.stop()
 
 def get_travel_options(source, destination):
